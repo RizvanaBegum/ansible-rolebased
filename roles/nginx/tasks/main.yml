@@ -1,0 +1,21 @@
+- name: Install nginx
+  apt:
+   update_cache: yes
+   name: nginx
+   state: present
+
+- name: Copy HTML file into host
+  copy:
+   src: index.html
+   dest: /var/www/html/
+   mode: '0644'
+
+- name: start and enable nginx
+  service:
+   name: nginx
+   state: started
+   enabled: yes
+
+- name: nginx post installation message
+  debug:
+    msg: Nginx is successfully installed and configures
