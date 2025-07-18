@@ -28,7 +28,7 @@ This project automates the installation and configuration of Apache and NGINX we
 
 ## 🗂️ Project Structure
 
-'''
+```
 ├── ansible.cfg
 ├── inventory/
 │ └── hosts
@@ -40,4 +40,4 @@ This project automates the installation and configuration of Apache and NGINX we
 │ └── nginx/
 │ ├── tasks/
 │ └── files/
-'''
+```
